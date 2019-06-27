@@ -9,6 +9,8 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    height: 100%;
+    position: relative;
 }
 
 .wrapper {
@@ -71,17 +73,40 @@ main {
     margin-top: 15vh;
 }
 
+.container {
+    
+    position: relative;
+    min-height: 70vh;
+    padding-bottom: 100px;
+}
+
+.content-wrap{
+    margin: 0 auto;
+    width: 70vh;
+}
+
+
+
+.title-page,
+.p-page {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
 
 /* style footer */
 .footer{
-    position: fixed;
-    left: 0;
+    position: absolute;
     bottom: 0;
-    padding-bottom: 10px;
+/* 
+    padding-bottom: 10px; */
     width: 100%;
     color: black;
+    height: 2.5rem;
     text-align: center;
 }
+
+/* name */
 
 #main-name {
     font-size: 5rem;
@@ -90,4 +115,24 @@ main {
 #sub-name {
     margin-top: 15px;
     font-size: 1.5rem;
+}
+
+/* thumnail image */
+.content-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    /* display: inline-block; */
+    width: 50%;
+    margin: 0 auto;
+}
+
+.thumbnail {
+    width: 100%;
+    max-width: 240px;
+    height: auto;
+    padding: .5rem;
+    
 }
