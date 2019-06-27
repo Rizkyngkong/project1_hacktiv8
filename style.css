@@ -11,6 +11,10 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+.wrapper {
+
+}
+
 /* background home */
 /* .bg-home {
     background-image: url('img/bg-laurentsai.jpg');
@@ -60,3 +64,30 @@ li {
     color: blue;
 }
 
+/* style konten home */
+main {
+    width: 100%;
+    text-align: center;
+    margin-top: 15vh;
+}
+
+
+/* style footer */
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    padding-bottom: 10px;
+    width: 100%;
+    color: black;
+    text-align: center;
+}
+
+#main-name {
+    font-size: 5rem;
+}
+
+#sub-name {
+    margin-top: 15px;
+    font-size: 1.5rem;
+}
