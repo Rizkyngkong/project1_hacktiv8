@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Contact | Lauren Tsai</title>
 </head>
+
 <body>
     <ul>
         <li><a class="nav-link" href="index.html">Home</a></li>
@@ -15,9 +17,32 @@
         <li><a class="nav-link" href="gallery.html">Gallery</a></li>
         <li><a class="nav-link" href="#">Contact</a></li>
     </ul>
-    
+
     <main>
-        <!-- content -->
+        <div class="container">
+            <div class="content-wrap">
+                <div>
+                    <h1 class="title-page">Contact Me</h1>
+                    <p class="p-page">Avalaible for bookings, collaboration, photoshoot, or anything else. Fine me on <a
+                            href="#">Instagram</a> or <a href="#"> Twitter </a> or you can contact me below!</p>
+                </div>
+
+                <div class="kontak">
+                    <form>
+                        <input type="text" name="nama" id="nama" required placeholder="Your Name">
+                        <input type="email" name="email" id="email" required placeholder="Email"><br>
+                        <input type="text" required name="phone" id="phone" placeholder="Phone Number">
+                        <input type="textarea" name="msg" id="pesan" required placeholder="Type your message below ..">
+                        <input type="submit" value="Send!" id="submit">
+                    </form>
+                </div>
+            </div>
+        </div>
     </main>
+
+    <footer class="footer">
+        &copy; 2019 by Lauren Tsai
+    </footer>
 </body>
+
 </html>

@@ -1,5 +1,6 @@
 /* font config */
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
 
 * {
    box-sizing: border-box;
@@ -11,10 +12,11 @@ body {
     font-family: 'Roboto', sans-serif;
     height: 100%;
     position: relative;
+    background: #fffbfb; 
 }
 
 .wrapper {
-
+    
 }
 
 /* background home */
@@ -44,13 +46,13 @@ li {
     position: relative;
     text-transform: uppercase;
     padding: 18px 0;
-    color: black;
+    color: #676867;
 }
 
 .nav-link::before {
     z-index: -1;
     content: "";
-    background-color: #fadb44;
+    background-color: #869570;
     bottom: 15px;
     width: 100%;
     height: 3px;
@@ -63,7 +65,7 @@ li {
 }
 
 .nav-link:active {
-    color: blue;
+    
 }
 
 /* style konten home */
@@ -73,8 +75,7 @@ main {
     margin-top: 15vh;
 }
 
-.container {
-    
+.container {    
     position: relative;
     min-height: 70vh;
     padding-bottom: 100px;
@@ -86,11 +87,22 @@ main {
 }
 
 
-
+/* main style for content */
 .title-page,
 .p-page {
     text-align: left;
     margin-bottom: 15px;
+}
+
+.title-page {
+    font-family: 'Lobster', cursive;
+    font-size: 32px;
+}
+
+.p-page {
+    font-size: 15px;
+    line-height: 1.5;
+
 }
 
 
@@ -106,10 +118,11 @@ main {
     text-align: center;
 }
 
-/* name */
+/* Title name Home */
 
 #main-name {
-    font-size: 5rem;
+    font-family: 'Lobster', cursive;
+    font-size: 80px;
 }
 
 #sub-name {
@@ -117,14 +130,22 @@ main {
     font-size: 1.5rem;
 }
 
-/* thumnail image */
+/* About Page */
+#lauren-bio {
+    text-align: justify;
+}
+
+#about-img {
+    margin-bottom: 10px;
+}
+
+/* Gallery page */
 .content-img {
     display: flex;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
     flex-flow: row wrap;
-    /* display: inline-block; */
     width: 50%;
     margin: 0 auto;
 }
@@ -136,3 +157,51 @@ main {
     padding: .5rem;
     
 }
+
+
+/* Contact page*/
+.kontak{
+    display: inline-block;
+    text-align: left;
+    margin: 20px;
+}
+#nama, #email, #phone{
+    margin-bottom: 15px;
+    font-size: 20px;
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #bac2cabe;
+    border-radius: 5px;
+}
+#nama:hover, #email:hover, #phone:hover, #pesan:hover{
+    box-shadow: 3px 3px 15px 3px #676867;
+}
+.kontak input[type="textarea"]{
+    margin-bottom: 15px;
+    font-size: 20px;
+    width: 100%;
+    height: 100px;
+    padding: 5px;
+    padding-top: 0;
+    border: 1px solid #bac2cabe;
+    border-radius: 5px;
+}
+#submit{
+    background-color: #676867;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    padding: 10px 60px 10px 60px;
+    color: white;
+    font-weight: bold;
+    margin-top: 15px;
+    font-size: 18px;
+    width: 100%;
+    transition: all 0.5s ease-out;
+}
+#submit:hover{
+    color: #000;
+    background-color: #fff;
+    border: 1px solid #676867;    
+}
+>>>>>>> 94efae7a3c8e63a6f364ec463f2d54c05716e2a4
+>>>>>>> 99ee65aaf083dd75e90a5589d0b194db1c34ca95
