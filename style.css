@@ -2,6 +2,14 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
 
+/* animasi config */
+@keyframes load{
+    0% {
+        transform: translateY(100vh); }
+    100% {
+        transform: translateY(0); }
+}
+
 * {
    box-sizing: border-box;
    margin: 0;
@@ -13,11 +21,9 @@ body {
     height: 100%;
     position: relative;
     background: #fffbfb; 
+    color: #141212;
 }
 
-.wrapper {
-    
-}
 
 /* background home */
 /* .bg-home {
@@ -32,6 +38,7 @@ ul {
     list-style: none;
     width: 100%; 
     text-align: center;
+    animation: 1s load;
 }
 
 li {
@@ -86,6 +93,23 @@ main {
     width: 70vh;
 }
 
+.icon-wrapper {
+    margin: 15px;
+    padding: 10px;
+    animation: 1.5s load;
+}
+
+.icon {
+    margin: 0 10px;
+    cursor: pointer;
+    color: #869570;
+    transition: .5s all ease-out;
+}
+
+.icon:hover {
+    color: #141212;
+
+}
 
 /* main style for content */
 .title-page,
@@ -97,25 +121,14 @@ main {
 .title-page {
     font-family: 'Lobster', cursive;
     font-size: 32px;
+    animation: 1.5s load;
 }
 
 .p-page {
     font-size: 15px;
     line-height: 1.5;
+    animation: 1s load;
 
-}
-
-
-/* style footer */
-.footer{
-    position: absolute;
-    bottom: 0;
-/* 
-    padding-bottom: 10px; */
-    width: 100%;
-    color: black;
-    height: 2.5rem;
-    text-align: center;
 }
 
 /* Title name Home */
@@ -123,11 +136,13 @@ main {
 #main-name {
     font-family: 'Lobster', cursive;
     font-size: 80px;
+    animation: 1.5s load;
 }
 
 #sub-name {
     margin-top: 15px;
     font-size: 1.5rem;
+    animation: 1s load;
 }
 
 /* About Page */
@@ -137,6 +152,7 @@ main {
 
 #about-img {
     margin-bottom: 10px;
+    animation: 1.8s load;
 }
 
 /* Gallery page */
@@ -148,6 +164,7 @@ main {
     flex-flow: row wrap;
     width: 50%;
     margin: 0 auto;
+    animation: 1.8s load;
 }
 
 .thumbnail {
@@ -160,6 +177,10 @@ main {
 
 
 /* Contact page*/
+input {
+    animation: 1.8s load;
+}
+
 .kontak{
     display: inline-block;
     text-align: left;
@@ -196,12 +217,26 @@ main {
     margin-top: 15px;
     font-size: 18px;
     width: 100%;
+    cursor: pointer;
     transition: all 0.5s ease-out;
 }
 #submit:hover{
     color: #000;
     background-color: #fff;
     border: 1px solid #676867;    
+}
+
+/* style footer */
+.footer{
+    position: absolute;
+    bottom: 0;
+/* 
+    padding-bottom: 10px; */
+    width: 100%;
+    color: black;
+    height: 2.5rem;
+    text-align: center;
+    animation: 1.8s load;
 }
 >>>>>>> 94efae7a3c8e63a6f364ec463f2d54c05716e2a4
 >>>>>>> 99ee65aaf083dd75e90a5589d0b194db1c34ca95
